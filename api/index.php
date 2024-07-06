@@ -1,9 +1,4 @@
 <?php
-if ($_SERVER['REQUEST_METHOD'] !== 'POST') {
-    header('HTTP/1.1 405 Method Not Allowed');
-    echo 'Only POST requests are allowed';
-    return;
-}
 if (!array_key_exists('channel', $_REQUEST)) {
     echo 'Empty channel';
     return;

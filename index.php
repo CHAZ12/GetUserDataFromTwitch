@@ -65,7 +65,6 @@ if ($_REQUEST['action'] == 'update') {
         curl_setopt($ch, CURLOPT_POST, true);
         curl_setopt($ch, CURLOPT_RETURNTRANSFER, true);
         curl_setopt($ch, CURLOPT_SSL_VERIFYPEER, false); // Enable SSL certificate verification
-        curl_setopt($ch, CURLOPT_CAINFO, 'cacert'); // Specify path to CA certificates bundle
         #curl_setopt($ch, CURLOPT_POSTFIELDS, $postData);
         curl_setopt($ch, CURLOPT_POSTFIELDS, $ModsData);
         #curl_setopt($ch, CURLOPT_POSTFIELDS, $viewerCountData);

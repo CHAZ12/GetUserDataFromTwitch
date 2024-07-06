@@ -72,7 +72,6 @@ if ($_REQUEST['action'] == 'update') {
         #curl_setopt($ch, CURLOPT_FOLLOWLOCATION, true); // Follow redirects
 
         curl_setopt($ch, CURLOPT_HTTPHEADER, [
-            #'Authorization: Bearer 2248suncki9npc4dqrhl9hvvfzzdaf', // Replace with your actual access token
             'Client-Id: kimne78kx3ncx6brgo4mv6wki5h1ko' // Replace with your Twitch client ID
         ]);
 
